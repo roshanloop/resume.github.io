@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>ROSHAN RESUME</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: 	#e6c4c4;
+            text-align: center;
+        }
+        .resume-container {
+            width: 60%;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 3em;
+        }
+        h2 {
+            color: #000000;
+            font-size: 2em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #34495e;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #2980b9;
+            border-radius: 5px;
+            font-size: 1.5em;
+        }
+        section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <h1>ROSHAN R</h1>
+        <h2>STUDENT</h2>
+        <nav>
+            <a href="#" onclick="showSection('about')">About</a>
+            <a href="#" onclick="showSection('skills')">Skills</a>
+            <a href="#" onclick="showSection('education')">Education</a>
+            <a href="#" onclick="showSection('contact')">Contact</a>
+        </nav>
+        
+        <section id="about" class="active">
+            <h2>About Me</h2>
+            <p>
+                Bachelor of Computer Science.</p>
+            <p> I Consider My self a responsible and orderly person. 
+                I am looking forward for my first work experience.</p>
+        </section>
+        
+        <section id="skills">
+            <h2>SKILLS</h2>
+            <p>Web developement (HTML).</p>
+            <p>Python.</p>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <p>Bachelor's Degree in Computer Science - Bharathiyar University (2023-2026)</p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: roshanero6@gmail</p>
+            <p>Phone: 9956976562</p>
+        </section>
+    </div>
+    
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
